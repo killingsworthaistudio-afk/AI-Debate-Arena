@@ -11,6 +11,7 @@ export default defineConfig(() => {
       },
     },
     server: {
+      allowedHosts: ['ai-debate-arena-ahhp.onrender.com'],
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
